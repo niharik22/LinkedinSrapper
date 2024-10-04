@@ -1,0 +1,44 @@
+
+env: "LOCAL"
+
+# URL configurations
+urls:
+  login_url: "https://www.linkedin.com/checkpoint/rm/sign-in-another-account?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin"
+#  search_url: "https://www.linkedin.com/jobs/search/?keywords=data%20science"
+  search_url: "https://www.linkedin.com/jobs/search/?keywords=data%20science"
+
+# Credentials
+username: "riklscrap2@gmail.com"
+
+# Scraping settings
+scraping:
+  no_of_pages: 40  # Number of pages to scrape
+  scroll_delay: 1  # Delay (in seconds) between scrolling through jobs
+  timeout: 10  # Timeout for waiting for elements (in seconds)
+
+# File paths
+paths:
+  driver_path: "../chromedriver/chromedriver"  # Update to reflect the path inside the Docker container
+  password_file: "../utilities/pass.txt"  # Path to file containing the password inside Docker container
+  save_directory: "../data/"  # Directory where pickle files or other data files will be saved
+  job_data_file: "job_dict.p"  # Pickle file name to save job data
+  full_job_data_file: "job_dict_full.p"  # Pickle file name for full job details
+
+# Logging settings
+logging:
+  level: "INFO"  # Options: DEBUG, INFO, WARNING, ERROR, CRITICAL
+  log_file: "scraping.log"  # File where logs will be saved
+  log_to_console: true  # Enable/Disable logging to the console
+
+# Retry settings
+retry:
+  max_attempts: 3  # Number of retry attempts for failed pages
+  backoff_factor: 2  # Backoff factor for retries
+
+# Browser options
+browser:
+  headless: false  # Whether to run the browser in headless mode
+  window_size: "1920x1080"  # Set the browser window size for better visibility in headless mode
+
+# cookies
+cookies_file: "./cookies.pkl"

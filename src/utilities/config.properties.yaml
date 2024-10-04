@@ -1,0 +1,7 @@
+# env
+env: "LOCAL" # Options: LOCAL, DOCKER
+
+# Configuration File
+config_file:
+  LOCAL: "../utilities/config.local.yaml"
+  DOCKER: "/app/utilities/config.docker.yaml"
