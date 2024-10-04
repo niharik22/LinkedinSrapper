@@ -85,3 +85,13 @@ password_file: "/app/utilities/pass.txt"
 - **Logs**: Logs are generated during the scraping process to capture important information such as login status, number of jobs found, and any errors encountered during scraping. Logs are written both to the console and to a log file as configured in the YAML file.
 
 - **Saving and Loading Data**: Scraped job data is saved as a serialized `.p` file using pickle, making it easy to reload data between scraping sessions. The saved data includes job details such as title, link, location, description, applicants, and time posted.
+
+## Use for Educational Purpose
+
+This scraper is intended for educational purposes. The data extracted should be used ethically, and scraping websites should always comply with their terms of service. Be mindful of the limitations and permissions set by the website.
+
+## Future Enhancements
+
+1. This project can be extended for multiple purposes. You can modify the scraper to extract additional fields based on your needs.
+2. It serves as a skeleton for future projects. You can expand its functionality to gather more data such as company details, salary ranges, job benefits, or even automate job applications.
+3. You could also integrate advanced features like using the scraped data to analyze trends in job postings, demand for certain skills, or job market conditions.
