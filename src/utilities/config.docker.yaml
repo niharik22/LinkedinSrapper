@@ -7,7 +7,7 @@ urls:
   search_url: "https://www.linkedin.com/jobs/search/?keywords=data%20science"
 
 # Credentials
-username: "riklscrap1@gmail.com"
+username: "abc@gmail.com"
 
 # Scraping settings
 scraping:
