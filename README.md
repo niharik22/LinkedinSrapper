@@ -59,6 +59,10 @@ For Docker, update the path in the config file:
 ```yaml
 password_file: "/app/utilities/pass.txt"
 ```
+For Local, update the path in the config file:
+```yaml
+password_file: "../utilities/pass.txt"
+```
 
 ### 4. Running the Scraper
 
